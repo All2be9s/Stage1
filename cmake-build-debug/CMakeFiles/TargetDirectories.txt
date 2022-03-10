@@ -1,0 +1,3 @@
+E:/BugGame/cmake-build-debug/CMakeFiles/BugGame.dir
+E:/BugGame/cmake-build-debug/CMakeFiles/edit_cache.dir
+E:/BugGame/cmake-build-debug/CMakeFiles/rebuild_cache.dir

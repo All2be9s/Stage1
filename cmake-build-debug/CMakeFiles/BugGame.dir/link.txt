@@ -1,0 +1,3 @@
+"E:\Program Files\JetBrains\CLion\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\BugGame.dir/objects.a
+"E:\Program Files\mingw-w64\mingw64\bin\ar.exe" cr CMakeFiles\BugGame.dir/objects.a @CMakeFiles\BugGame.dir\objects1.rsp
+"E:\Program Files\mingw-w64\mingw64\bin\g++.exe" -g -Wl,--whole-archive CMakeFiles\BugGame.dir/objects.a -Wl,--no-whole-archive -o BugGame.exe -Wl,--out-implib,libBugGame.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\BugGame.dir\linklibs.rsp

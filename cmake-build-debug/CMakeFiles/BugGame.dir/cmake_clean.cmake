@@ -2,6 +2,9 @@ file(REMOVE_RECURSE
   "BugGame.exe"
   "BugGame.exe.manifest"
   "BugGame.pdb"
+  "CMakeFiles/BugGame.dir/Bomb.cpp.obj"
+  "CMakeFiles/BugGame.dir/Character.cpp.obj"
+  "CMakeFiles/BugGame.dir/Map.cpp.obj"
   "CMakeFiles/BugGame.dir/main.cpp.obj"
   "libBugGame.dll.a"
 )

@@ -88,19 +88,64 @@ CMakeFiles/BugGame.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BugGame.dir/main.cpp.s"
 	"E:\Program Files\mingw-w64\mingw64\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\BugGame\main.cpp -o CMakeFiles\BugGame.dir\main.cpp.s
 
+CMakeFiles/BugGame.dir/Character.cpp.obj: CMakeFiles/BugGame.dir/flags.make
+CMakeFiles/BugGame.dir/Character.cpp.obj: ../Character.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\BugGame\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/BugGame.dir/Character.cpp.obj"
+	"E:\Program Files\mingw-w64\mingw64\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\BugGame.dir\Character.cpp.obj -c E:\BugGame\Character.cpp
+
+CMakeFiles/BugGame.dir/Character.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BugGame.dir/Character.cpp.i"
+	"E:\Program Files\mingw-w64\mingw64\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\BugGame\Character.cpp > CMakeFiles\BugGame.dir\Character.cpp.i
+
+CMakeFiles/BugGame.dir/Character.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BugGame.dir/Character.cpp.s"
+	"E:\Program Files\mingw-w64\mingw64\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\BugGame\Character.cpp -o CMakeFiles\BugGame.dir\Character.cpp.s
+
+CMakeFiles/BugGame.dir/Bomb.cpp.obj: CMakeFiles/BugGame.dir/flags.make
+CMakeFiles/BugGame.dir/Bomb.cpp.obj: ../Bomb.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\BugGame\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/BugGame.dir/Bomb.cpp.obj"
+	"E:\Program Files\mingw-w64\mingw64\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\BugGame.dir\Bomb.cpp.obj -c E:\BugGame\Bomb.cpp
+
+CMakeFiles/BugGame.dir/Bomb.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BugGame.dir/Bomb.cpp.i"
+	"E:\Program Files\mingw-w64\mingw64\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\BugGame\Bomb.cpp > CMakeFiles\BugGame.dir\Bomb.cpp.i
+
+CMakeFiles/BugGame.dir/Bomb.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BugGame.dir/Bomb.cpp.s"
+	"E:\Program Files\mingw-w64\mingw64\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\BugGame\Bomb.cpp -o CMakeFiles\BugGame.dir\Bomb.cpp.s
+
+CMakeFiles/BugGame.dir/Map.cpp.obj: CMakeFiles/BugGame.dir/flags.make
+CMakeFiles/BugGame.dir/Map.cpp.obj: ../Map.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\BugGame\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/BugGame.dir/Map.cpp.obj"
+	"E:\Program Files\mingw-w64\mingw64\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\BugGame.dir\Map.cpp.obj -c E:\BugGame\Map.cpp
+
+CMakeFiles/BugGame.dir/Map.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BugGame.dir/Map.cpp.i"
+	"E:\Program Files\mingw-w64\mingw64\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E E:\BugGame\Map.cpp > CMakeFiles\BugGame.dir\Map.cpp.i
+
+CMakeFiles/BugGame.dir/Map.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BugGame.dir/Map.cpp.s"
+	"E:\Program Files\mingw-w64\mingw64\bin\g++.exe" $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S E:\BugGame\Map.cpp -o CMakeFiles\BugGame.dir\Map.cpp.s
+
 # Object files for target BugGame
 BugGame_OBJECTS = \
-"CMakeFiles/BugGame.dir/main.cpp.obj"
+"CMakeFiles/BugGame.dir/main.cpp.obj" \
+"CMakeFiles/BugGame.dir/Character.cpp.obj" \
+"CMakeFiles/BugGame.dir/Bomb.cpp.obj" \
+"CMakeFiles/BugGame.dir/Map.cpp.obj"
 
 # External object files for target BugGame
 BugGame_EXTERNAL_OBJECTS =
 
 BugGame.exe: CMakeFiles/BugGame.dir/main.cpp.obj
+BugGame.exe: CMakeFiles/BugGame.dir/Character.cpp.obj
+BugGame.exe: CMakeFiles/BugGame.dir/Bomb.cpp.obj
+BugGame.exe: CMakeFiles/BugGame.dir/Map.cpp.obj
 BugGame.exe: CMakeFiles/BugGame.dir/build.make
 BugGame.exe: CMakeFiles/BugGame.dir/linklibs.rsp
 BugGame.exe: CMakeFiles/BugGame.dir/objects1.rsp
 BugGame.exe: CMakeFiles/BugGame.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=E:\BugGame\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable BugGame.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=E:\BugGame\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable BugGame.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\BugGame.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

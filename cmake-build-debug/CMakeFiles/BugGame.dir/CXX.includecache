@@ -6,7 +6,17 @@
 
 #IncludeRegexTransform: 
 
+E:/BugGame/Character.cpp
+Character.h
+E:/BugGame/Character.h
+
+E:/BugGame/Character.h
+
 E:/BugGame/main.cpp
-iostream
+bits/stdc++.h
 -
+windows.h
+-
+Character.h
+E:/BugGame/Character.h
 

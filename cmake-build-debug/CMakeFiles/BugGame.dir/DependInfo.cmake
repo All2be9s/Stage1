@@ -4,6 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "E:/BugGame/Bomb.cpp" "E:/BugGame/cmake-build-debug/CMakeFiles/BugGame.dir/Bomb.cpp.obj"
+  "E:/BugGame/Character.cpp" "E:/BugGame/cmake-build-debug/CMakeFiles/BugGame.dir/Character.cpp.obj"
+  "E:/BugGame/Map.cpp" "E:/BugGame/cmake-build-debug/CMakeFiles/BugGame.dir/Map.cpp.obj"
   "E:/BugGame/main.cpp" "E:/BugGame/cmake-build-debug/CMakeFiles/BugGame.dir/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

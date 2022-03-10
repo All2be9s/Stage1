@@ -1,7 +1,12 @@
-#include <iostream>
+#include <bits/stdc++.h>
+#include <windows.h>
 
-int main()
-{
-    std::cout<<"Hello, World!"<<std::endl;
+#include "Character.h"
+#include "Bomb.h"
+#include "Map.h"
+
+
+
+int main(){
     return 0;
 }

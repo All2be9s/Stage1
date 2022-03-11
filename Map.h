@@ -1,10 +1,10 @@
 class Map {
-private:
+protected:
 	char table[40][40];
 public:
 	void Display_Map();
 	void Bomb_Effect(int pos_x,int pos_y);
-	bool Check_Movement(int pos_x,int pos_y);
+	int Check_Movement(int pos_x, int pos_y);
 	Map(){
 		for(int i=4;i<=36;i++)
 			for(int j=4;j<=36;j++)

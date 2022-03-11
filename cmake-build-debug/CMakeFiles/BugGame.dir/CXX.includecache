@@ -31,6 +31,8 @@ windows.h
 -
 conio.h
 -
+ctime
+-
 header.h
 E:/BugGame/header.h
 

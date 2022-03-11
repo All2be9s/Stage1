@@ -1,10 +1,12 @@
 #include <iostream>
 #include <windows.h>
 #include <conio.h>
+#include <ctime>
 
 using namespace std;
 
 #include "header.h"
+
 
 void Initialize();
 void Time_Count();
@@ -22,7 +24,7 @@ int main(){
 		printf(" robot 1  |");robot_1.Status();
 		printf(" robot 2  |");robot_2.Status();
 
-		Sleep(500);
+		Sleep(10);
 		Time_Count();
 		char key=_getch();
 		player_1.Keyboard_Response(key);
@@ -34,10 +36,18 @@ int main(){
 }
 
 void Initialize(){
-
+	srand(0);
 }
 void Time_Count(){
-
-
-
+	global_counter++;
+	int i=0;
+	while(i<bombs.size()){
+		int res=bombs[i].Count();
+		if(res==-2)i++;
+		else break;
+	}
+	bombs.erase(bombs.begin(),bombs.begin()+i);
+	for(i=1;i<bombs.size();i++){
+		bombs[i].Count();
+	}
 }

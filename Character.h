@@ -1,16 +1,15 @@
 #include <map>
 
 class Character {
-private:
+protected:
 	int pos_x,pos_y;
 	int buff_status;
 	int hit_point;
 	char represent_char;
 public:
 	void Move(int direction);
-	void Hit(int damage);
+	void Hit(int bo_x,int bo_y,int damage);
 	void Fire();
-	void Buff(int buff);
 	void Display(char a[40][40]);
 	void Status();
 	Character(int x, int y, int r) {
@@ -23,7 +22,7 @@ public:
 };
 
 class Player : public Character {
-private:
+protected:
 	std::map<char,int> key_map;
 public:
 	void Keyboard_Response(char key);

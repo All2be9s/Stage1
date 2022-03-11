@@ -12,8 +12,17 @@ void Time_Count();
 int main(){
 	Initialize();
 	while(1){
+		system("cls");
 		game_map.Display_Map();
-		Sleep(100);
+
+		printf("\n\n\n");
+		printf("          |  Hit Point  |    Speed    |    Power   |\n");
+		printf(" player1  |");player_1.Status();
+		printf(" player2  |");player_2.Status();
+		printf(" robot 1  |");robot_1.Status();
+		printf(" robot 2  |");robot_2.Status();
+
+		Sleep(500);
 		Time_Count();
 		char key=_getch();
 		player_1.Keyboard_Response(key);
@@ -25,8 +34,6 @@ int main(){
 }
 
 void Initialize(){
-
-
 
 }
 void Time_Count(){

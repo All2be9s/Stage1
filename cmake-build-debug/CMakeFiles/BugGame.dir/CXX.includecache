@@ -7,7 +7,7 @@
 #IncludeRegexTransform: 
 
 E:/BugGame/Bomb.h
-queue
+vector
 -
 
 E:/BugGame/Character.h

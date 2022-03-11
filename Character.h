@@ -11,7 +11,8 @@ public:
 	void Hit(int damage);
 	void Fire();
 	void Buff(int buff);
-	void Display(char *a);
+	void Display(char a[40][40]);
+	void Status();
 	Character(int x, int y, int r) {
 		pos_x=x;
 		pos_y=y;

@@ -80,24 +80,6 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="E:/BugGame/Bomb.cpp">
-			<Option target="BugGame"/>
-		</Unit>
-		<Unit filename="E:/BugGame/Bomb.h">
-			<Option target="BugGame"/>
-		</Unit>
-		<Unit filename="E:/BugGame/Character.cpp">
-			<Option target="BugGame"/>
-		</Unit>
-		<Unit filename="E:/BugGame/Character.h">
-			<Option target="BugGame"/>
-		</Unit>
-		<Unit filename="E:/BugGame/Map.cpp">
-			<Option target="BugGame"/>
-		</Unit>
-		<Unit filename="E:/BugGame/Map.h">
-			<Option target="BugGame"/>
-		</Unit>
 		<Unit filename="E:/BugGame/main.cpp">
 			<Option target="BugGame"/>
 		</Unit>

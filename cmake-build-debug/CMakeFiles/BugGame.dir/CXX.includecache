@@ -6,17 +6,31 @@
 
 #IncludeRegexTransform: 
 
-E:/BugGame/Character.cpp
+E:/BugGame/Bomb.h
+queue
+-
+
+E:/BugGame/Character.h
+map
+-
+
+E:/BugGame/Map.h
+
+E:/BugGame/header.h
 Character.h
 E:/BugGame/Character.h
-
-E:/BugGame/Character.h
+Bomb.h
+E:/BugGame/Bomb.h
+Map.h
+E:/BugGame/Map.h
 
 E:/BugGame/main.cpp
-bits/stdc++.h
+iostream
 -
 windows.h
 -
-Character.h
-E:/BugGame/Character.h
+conio.h
+-
+header.h
+E:/BugGame/header.h
 

@@ -141,87 +141,6 @@ BugGame/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\BugGame.dir\build.make CMakeFiles/BugGame.dir/build
 .PHONY : BugGame/fast
 
-Bomb.obj: Bomb.cpp.obj
-
-.PHONY : Bomb.obj
-
-# target to build an object file
-Bomb.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\BugGame.dir\build.make CMakeFiles/BugGame.dir/Bomb.cpp.obj
-.PHONY : Bomb.cpp.obj
-
-Bomb.i: Bomb.cpp.i
-
-.PHONY : Bomb.i
-
-# target to preprocess a source file
-Bomb.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\BugGame.dir\build.make CMakeFiles/BugGame.dir/Bomb.cpp.i
-.PHONY : Bomb.cpp.i
-
-Bomb.s: Bomb.cpp.s
-
-.PHONY : Bomb.s
-
-# target to generate assembly for a file
-Bomb.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\BugGame.dir\build.make CMakeFiles/BugGame.dir/Bomb.cpp.s
-.PHONY : Bomb.cpp.s
-
-Character.obj: Character.cpp.obj
-
-.PHONY : Character.obj
-
-# target to build an object file
-Character.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\BugGame.dir\build.make CMakeFiles/BugGame.dir/Character.cpp.obj
-.PHONY : Character.cpp.obj
-
-Character.i: Character.cpp.i
-
-.PHONY : Character.i
-
-# target to preprocess a source file
-Character.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\BugGame.dir\build.make CMakeFiles/BugGame.dir/Character.cpp.i
-.PHONY : Character.cpp.i
-
-Character.s: Character.cpp.s
-
-.PHONY : Character.s
-
-# target to generate assembly for a file
-Character.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\BugGame.dir\build.make CMakeFiles/BugGame.dir/Character.cpp.s
-.PHONY : Character.cpp.s
-
-Map.obj: Map.cpp.obj
-
-.PHONY : Map.obj
-
-# target to build an object file
-Map.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\BugGame.dir\build.make CMakeFiles/BugGame.dir/Map.cpp.obj
-.PHONY : Map.cpp.obj
-
-Map.i: Map.cpp.i
-
-.PHONY : Map.i
-
-# target to preprocess a source file
-Map.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\BugGame.dir\build.make CMakeFiles/BugGame.dir/Map.cpp.i
-.PHONY : Map.cpp.i
-
-Map.s: Map.cpp.s
-
-.PHONY : Map.s
-
-# target to generate assembly for a file
-Map.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\BugGame.dir\build.make CMakeFiles/BugGame.dir/Map.cpp.s
-.PHONY : Map.cpp.s
-
 main.obj: main.cpp.obj
 
 .PHONY : main.obj
@@ -258,15 +177,6 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... BugGame
-	@echo ... Bomb.obj
-	@echo ... Bomb.i
-	@echo ... Bomb.s
-	@echo ... Character.obj
-	@echo ... Character.i
-	@echo ... Character.s
-	@echo ... Map.obj
-	@echo ... Map.i
-	@echo ... Map.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

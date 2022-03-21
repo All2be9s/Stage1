@@ -5,8 +5,29 @@
 int global_counter=0;
 
 const int direc_x[5]={-1,0,1,0,0},direc_y[5]={0,-1,0,1,0};
+const int logic_dir[16][8]={
+		{0,1,1,1,0,1,1,1},
+		{1,2,2,2,1,2,2,2},
+		{2,3,3,3,2,3,3,3},
+		{3,0,0,0,3,0,0,0},
 
-void Character::Move(int direction) {
+		{3,3,0,0,3,3,0,0},
+		{2,2,3,3,2,2,3,3},
+		{1,1,2,2,1,1,2,2},
+		{0,0,1,1,0,0,1,1},
+
+		{0,0,0,1,0,0,0,1},
+		{1,1,1,2,1,1,1,2},
+		{2,2,2,3,2,2,2,3},
+		{3,3,3,0,3,3,3,0},
+
+		{3,3,0,0,3,3,0,0},
+		{2,2,3,3,2,2,3,3},
+		{1,1,2,2,1,1,2,2},
+		{0,0,1,1,0,0,1,1},
+};
+
+bool Character::Move(int direction) {
 	int npos_x=pos_x+direc_x[direction];
 	int npos_y=pos_y+direc_y[direction];
 	int res=game_map.Check_Movement(npos_x, npos_y);
@@ -14,7 +35,9 @@ void Character::Move(int direction) {
 		pos_x=npos_x;
 		pos_y=npos_y;
 		buff_status|=res;
+		return 1;
 	}
+	return 0;
 }
 void Character::Display(char a[40][40]) {
 	a[pos_x][pos_y]=represent_char;
@@ -39,7 +62,18 @@ void Player::Keyboard_Response(char key) {
 	else Move(key_map[key]);
 }
 void Robot::Decide_Movement() {
-
+	if(global_counter%2==0&&(buff_status&1)!=1)return ;
+	if(logic_y==8){
+		logic_y=0;
+		logic_x=rand()%16;
+		Fire();
+	}
+	else {
+		while(!Move(logic_dir[logic_x][logic_y])){
+			logic_x=(logic_x+1)%16;
+		}
+		logic_y++;
+	}
 }
 
 

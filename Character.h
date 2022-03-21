@@ -7,7 +7,7 @@ protected:
 	int hit_point;
 	char represent_char;
 public:
-	void Move(int direction);
+	bool Move(int direction);
 	void Hit(int bo_x,int bo_y,int damage);
 	void Fire();
 	void Display(char a[40][40]);
@@ -36,6 +36,8 @@ public:
 };
 
 class Robot : public Character {
+protected:
+	int logic_x=0,logic_y=0;
 public:
 	void Decide_Movement();
 	Robot(int x, int y, char r) : Character(x,y,r) {}

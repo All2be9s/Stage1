@@ -7,13 +7,11 @@ using namespace std;
 
 #include "header.h"
 
-void Initialize();
 void Time_Count();
 void Status_Display();
 void Game_Over(int mask);
 
 int main(){
-	Initialize();
 	while(1){
 		system("cls");
 		game_map.Display_Map();
@@ -30,9 +28,6 @@ int main(){
     return 0;
 }
 
-void Initialize(){
-	srand(time(0));
-}
 void Time_Count(){
 	global_counter++;
 	int i=0;
@@ -63,7 +58,7 @@ void Game_Over(int mask){
 		printf("And Then There Were None.\n\n\n");
 		Sleep(3000);
 		system("cls");
-		printf("无人生还.");
+		printf("Nobody is alive.");
 	}
 	else {
 		if(mask<3)printf("Player %d wins!",mask);

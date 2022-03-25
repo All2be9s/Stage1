@@ -6,6 +6,7 @@ public:
 	void Bomb_Effect(int pos_x,int pos_y);
 	int Check_Movement(int pos_x, int pos_y);
 	Map(){
+		srand(time(NULL));
 		for(int i=4;i<=36;i++)
 			for(int j=4;j<=36;j++)
 				table[i][j]=' ';

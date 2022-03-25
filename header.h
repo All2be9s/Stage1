@@ -40,6 +40,7 @@ bool Character::Move(int direction) {
 	return 0;
 }
 void Character::Display(char a[40][40]) {
+	if(hit_point<=0)return ;
 	a[pos_x][pos_y]=represent_char;
 }
 void Character::Fire() {
@@ -51,17 +52,20 @@ void Character::Hit(int bo_x,int bo_y,int damage) {
 		hit_point-=damage;
 	}
 }
-void Character::Status() {
-	printf("      %d      |      %d      |      %d     |\n",hit_point,(buff_status&1)+1,((buff_status&2)>>1)+1);
+bool Character::Status() {
+	printf("     %2d      |     %2d      |     %2d     |\n",hit_point,(buff_status&1)+1,((buff_status&2)>>1)+1);
+	return hit_point<=0;
 }
 
 void Player::Keyboard_Response(char key) {
+	if(hit_point<=0)return ;
 	if(global_counter%2==0&&(buff_status&1)!=1)return ;
 	if(key_map.find(key)==key_map.end())return;
 	if(key_map[key]==4)Fire();
 	else Move(key_map[key]);
 }
 void Robot::Decide_Movement() {
+	if(hit_point<=0)return ;
 	if(global_counter%2==0&&(buff_status&1)!=1)return ;
 	if(logic_y==8){
 		logic_y=0;

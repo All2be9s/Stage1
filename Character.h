@@ -11,7 +11,7 @@ public:
 	void Hit(int bo_x,int bo_y,int damage);
 	void Fire();
 	void Display(char a[40][40]);
-	void Status();
+	bool Status();
 	Character(int x, int y, int r) {
 		pos_x=x;
 		pos_y=y;
